@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture Haven</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Furniture Haven</div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Transform Your Space</h1>
+    <p>High-quality furniture for every corner of your home.</p>
+    <a href="#products" class="cta-button">Shop Now</a>
+  </section>
+
+<section id="about" class="about">
+  <div class="about-content">
+    <h2>About Us</h2>
+    <p>We offer modern, comfortable, and affordable furniture solutions to suit your taste and budget. With over 15 years of experience in the furniture industry, we pride ourselves on delivering exceptional quality and customer service.</p>
+  </div>
+</section>
+
+  
+<section id="products" class="products">
+  <h2>Our Products</h2>
+  <div class="product-list">
+
+    <div class="product-card">
+      <img src="img/sofa.jpg" alt="Sofa" onclick="viewProductDetail('Luxury Sofa', 15000, 'img/sofa.jpg', 'Premium quality sofa with high-density foam...')">
+      <h3>Luxury Sofa</h3>
+      <p>₹15,000</p>
+      <button onclick="addToCart('Luxury Sofa', 15000, 'img/sofa.jpg')">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="img/queen bed.jpg" alt="Bed" onclick="viewProductDetail('Queen Bed', 20000, 'img/queen bed.jpg', 'Solid wood queen bed with storage...')">
+      <h3>Queen Bed</h3>
+      <p>₹20,000</p>
+      <button onclick="addToCart('Queen Bed', 20000, 'img/queen bed.jpg')">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="img/kingbed.jpg" alt="Bed" onclick="viewProductDetail('King Bed', 25000, 'img/kingbed.jpg', 'Luxury king size bed with upholstered headboard...')">
+      <h3>King Bed</h3>
+      <p>₹25,000</p>
+      <button onclick="addToCart('King Bed', 25000, 'img/kingbed.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/singlebed.jpg" alt="Bed" onclick="viewProductDetail('Single Bed', 15000, 'img/singlebed.jpg', 'Compact single bed perfect for kids...')">
+      <h3>Single Bed</h3>
+      <p>₹15,000</p>
+      <button onclick="addToCart('Single Bed', 15000, 'img/singlebed.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/fullset.jpg" alt="Bed" onclick="viewProductDetail('Full Set', 15000, 'img/fullset.jpg', 'Compact single bed perfect for kids...')">
+      <h3>Full Set</h3>
+      <p>₹50,000</p>
+      <button onclick="addToCart('Full Set', 50000, 'img/fullset.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/garden.jpg" alt="Bed" onclick="viewProductDetail('Swing seat', 15000, 'img/garden.jpg', 'Compact single bed perfect for kids...')">
+      <h3>swing seat</h3>
+      <p>₹25,000</p>
+      <button onclick="addToCart('Swing Seat', 25000, 'img/garden.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/premimsofa.jpg" alt="Bed" onclick="viewProductDetail('Premium Sofa', 15000, 'img/premimsofa.jpg', 'Compact single bed perfect for kids...')">
+      <h3>Premium Sofa</h3>
+      <p>₹20,000</p>
+      <button onclick="addToCart('Premium Sofa', 15000, 'img/premimsofa.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/kingchair.jpg" alt="Bed" onclick="viewProductDetail('King Chair', 15000, 'img/kingchair.jpg', 'Compact single bed perfect for kids...')">
+      <h3>Chair</h3>
+      <p>₹15,000</p>
+      <button onclick="addToCart('Chair', 15000, 'img/kingchair.jpg')">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="img/cupboard.jpg" alt="Bed" onclick="viewProductDetail('Cupboard', 15000, 'img/cupboard.jpg', 'Compact single bed perfect for kids...')">
+      <h3>Cupboard</h3>
+      <p>₹15,000</p>
+      <button onclick="addToCart('Chair', 15000, 'img/cupboard.jpg')">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="img/diningtable.jpg" alt="Bed" onclick="viewProductDetail('Dining Table', 20000, 'img/diningtable.jpg', 'Compact single bed perfect for kids...')">
+      <h3>Dining Table</h3>
+      <p>₹20,000</p>
+      <button onclick="addToCart('Dining Table', 20000, 'img/diningtable.jpg')">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="img/rack.jpg" alt="Bed" onclick="viewProductDetail('Rack', 10000, 'img/rack.jpg', 'Compact single bed perfect for kids...')">
+      <h3>Rack</h3>
+      <p>₹10,000</p>
+      <button onclick="addToCart('Rack', 10000, 'img/rack.jpg')">Add to Cart</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="img/table.jpg" alt="Bed" onclick="viewProductDetail('Table', 3000, 'img/table.jpg', 'Compact single bed perfect for kids...')">
+      <h3>Table</h3>
+      <p>₹3,000</p>
+      <button onclick="addToCart('Table', 3000, 'img/table.jpg')">Add to Cart</button>
+    </div>
+    
+  </div>
+</section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>123 Furniture Street, Vellore</p>
+        <p>Phone: +91 6379202273</p>
+        <p>Email: varalakshmimanjunathan@gmail.com.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Furniture Haven. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
